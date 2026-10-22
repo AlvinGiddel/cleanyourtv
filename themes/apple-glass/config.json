@@ -1,0 +1,22 @@
+{
+  "dock_apps": [
+    "com.apple.atve.androidtv.appletv",
+    "com.netflix.ninja",
+    "com.google.android.youtube.tv",
+    "com.spotify.tv.android"
+  ],
+  "background_color": "#090C14",
+  "wallpaper": true,
+  "cinematic_home": true,
+  "dock_glass": true,
+  "dock_even_padding": true,
+  "icon_only_buttons": true,
+  "app_glow": true,
+  "glow_style": "horizon",
+  "focus_overshoot": true,
+  "advanced_effects": true,
+  "greeting_name": "Alvin",
+  "home_idle_clock_minutes": 5,
+  "app_library": true,
+  "library_button": true
+}
