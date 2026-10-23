@@ -43,7 +43,8 @@ for pkg in $PACKAGES; do
     tools/tv.py "pm enable $pkg"
 done
 
-echo "Restoring default private DNS..."
+echo "Restoring default private DNS and screensaver..."
 tools/tv.py "settings put global private_dns_mode opportunistic"
+tools/tv.py "settings put secure screensaver_components com.google.android.apps.tv.dreamx/.service.Backdrop; settings put secure screensaver_default_component com.google.android.apps.tv.dreamx/.service.Backdrop"
 tools/tv.py "cmd package set-home-activity --user 0 com.google.android.apps.tv.launcherx/.home.HomeActivity"
 echo "Done! All debloated packages re-enabled and stock launcher restored."

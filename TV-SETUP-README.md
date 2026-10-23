@@ -10,7 +10,7 @@ This guide documents the changes made to your TCL Smart TV (Model: G10, Android 
   - Disabled background telemetry, store demos, and unused TCL system services (`com.tcl.exhibit`, `com.tcl.channelplus`, `com.tcl.interactive`, `com.tcl.smartlink.core`, etc.).
   - Disabled advertising, preloaded prompts, and voice analytics (`com.google.android.katniss`, `com.google.android.feedback`, `gtvpai`).
   - Switched private DNS to AdGuard DNS (`dns.adguard-dns.com`) for network-wide ad blocking.
-  - Safe screensaver fallback configured to AOSP Colors.
+  - Configured screensaver to Apple Dark Clock (`com.gathin.tvhome/.ClockDream`): minimal drifting clock and date on OLED-safe black background with ambient glow, waking up immediately on any remote key press.
 - **Apple TV-Style Launcher**:
   - Replaced stock Google TV launcher (`com.google.android.apps.tv.launcherx`) and setup wizard (`com.google.android.tungsten.setupwraith`) with `com.gathin.tvhome`.
   - Configured 4 dock slots: **Apple TV**, **Netflix**, **YouTube**, **Spotify**.

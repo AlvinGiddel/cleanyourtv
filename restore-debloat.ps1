@@ -45,5 +45,6 @@ foreach ($pkg in $packages) {
 
 Write-Host "Restoring default screensaver and private DNS..."
 tools\venv\Scripts\python tools/tv.py "settings put global private_dns_mode opportunistic"
+tools\venv\Scripts\python tools/tv.py "settings put secure screensaver_components com.google.android.apps.tv.dreamx/.service.Backdrop; settings put secure screensaver_default_component com.google.android.apps.tv.dreamx/.service.Backdrop"
 tools\venv\Scripts\python tools/tv.py "cmd package set-home-activity --user 0 com.google.android.apps.tv.launcherx/.home.HomeActivity"
 Write-Host "Done! All debloated packages re-enabled and stock launcher restored."
